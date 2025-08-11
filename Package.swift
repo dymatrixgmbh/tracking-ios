@@ -1,28 +1,21 @@
-// swift-tools-version:5.3
+// swift-tools-version: 5.3
 // The swift-tools-version declares the minimum version of Swift required to build this package.
-
+ 
 import PackageDescription
-
+ 
 let package = Package(
     name: "EcondaTracking_Swift",
+    platforms: [.iOS(.v14)],
     products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "EcondaTracking_Swift",
-            targets: ["EcondaTracking_Swift"]),
-    ],
-    dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
+            targets: ["EcondaTracking_Swift"])
     ],
     targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .target(
+        .binaryTarget(
             name: "EcondaTracking_Swift",
-            dependencies: []),
-        .testTarget(
-            name: "EcondaTracking_SwiftTests",
-            dependencies: ["EcondaTracking_Swift"]),
+            url: "https://git.econda.de/tracking-sdks-public/tracking-ios/-/raw/main/bin/EcondaTracking_Swift.zip?ref_type=heads",
+            checksum: "7bd116c478fd82a514bca84eafa06ebe95b5b92ee52101057cd3bd954410f88a"
+        )
     ]
 )
