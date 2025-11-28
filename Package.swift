@@ -14,7 +14,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "EcondaTracking_Swift",
-            url: "https://github.com/dymatrixgmbh/tracking-ios/releases/download/1.01.1/EcondaTracking_Swift.xcframework.zip",
+            url: "https://github.com/dymatrixgmbh/tracking-ios/releases/download/1.2.1/EcondaTracking_Swift.xcframework.zip",
             checksum: "0df86eab8a81d4a722dc08cc77a2869feeaa116ce0873fc680b5cc797284032f"
         )
     ]
